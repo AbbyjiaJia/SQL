@@ -34,3 +34,6 @@ WHERE Salary < (SELECT MAX(Salary) FROM Employee)
 
 # notes:
 About the usage of limit and offset in SQL, we can refer to <https://www.sqltutorial.org/sql-limit/>
+1. Limit means the number of rows that will be returned
+2. offset means skips the offset rows before beginning to return the rows. 
+If you use both LIMIT and OFFSET clauses the OFFSET  skips offset rows first before the LIMIT  constrains the number of rows.
