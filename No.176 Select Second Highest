@@ -31,3 +31,6 @@ SELECT
 SELECT MAX(Salary) AS SecondHighestSalary 
 FROM Employee
 WHERE Salary < (SELECT MAX(Salary) FROM Employee)
+
+# notes:
+About the usage of limit and offset in SQL, we can refer to <https://www.sqltutorial.org/sql-limit/>
